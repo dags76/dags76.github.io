@@ -1,1 +1,216 @@
-hola mundo
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Somos una organización sin ánimos de lucro cuyo propósito es brindarte apoyo para tu crecimiento espiritual, con un enfoque integral y cristocéntrico, mediante la oración, la enseñanza de la Palabra de Dios (Bíblia), la asesoría y consejería.">
+    <title>Ministerio Cristiano Plenitud</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="assets/nueva-imagen-MCP-pequeña.png" type="image/x-icon">
+    <!-- font familys -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&;600&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- top bars -->
+    <div class="topbar flex">
+        <img class="topbars__logo" src="assets/nueva-imagen-MCP-pequeña.svg" alt="logo MCP">
+        <nav class="topbars__nav">
+            <ul class="topbars__menu">
+                <li class="topbars__items"><a class="link topbars__link" href="/index.html#Ministerios">Programas</a></li>
+                <li class="topbars__items"><a class="link topbars__link" href="/index.html#podcast">Podcast</a></li>
+                <li class="topbars__items"><a class="link topbars__link" href="/index.html#contacto">Donar</a></li>
+                <li class="topbars__items"><a class="link topbars__link" href="index.html#contacto">Contactar</a></li>
+                <!-- <li class="topbars__items"><a class="link topbars__link" href="index.html#ubicacion">Contacto</a></li> -->
+            </ul>
+            
+        </nav>
+        <!-- <div class="topbars__toggle">
+            <img class="topbars__toggle--img" src="assets/bars-solid.svg" alt="toggle bars">
+        </div> -->
+    </div>
+
+    <!-- header -->
+    <header class="header flex">
+       
+        <h1 class="header__title titles">Ministerio Cristiano Plenitud</h1>
+        <h2 class="header__subtitle titles">Formándonos con amor para vivir a plenitud</h2>
+        <!-- <div class="header__btn flex">
+            <a href="#" class="link btn">Donativos</a>
+            <a href="index.html#contacto" class="link btn">Membresía</a>
+        </div> -->
+        
+    </header>
+    
+    
+    <main>
+    <!-- sections one cards -->
+        <!-- contenedor -->
+        <section id="Ministerios" class="sections">
+            <h2 class="sections__titles titles">
+                Crecimiento Espiritual
+            </h2>
+            <!--contenedor cards-->        
+            <div class="section-cards flex">
+                <!-- card one -->
+                <article class="card">
+                    <header>
+                        <img class="section-cards__img" src="assets/peticiones-de-oracion.webp" alt="Una persona dentro de un templo arrodillada con las manos juntas a la altura de su pecho en actitud de oración">
+                        <h3 class="section-cards__title">Intercesión</h3>
+                    </header>                  
+                    <p class="section-cards__txt">Presenta tus peticiones y recibe tu bendición con el apoyo de nuestros intercesores</p>
+                    <a href="/index.html#contacto" class="link btn section-cards__btn">Necesito oración</a>
+                </article>  
+                <!-- card two -->
+                <article class="card">
+                    <header>
+                        <img class="section-cards__img" src="assets/estudio-biblico.webp" alt="Una persona mostrando una biblia con la tapa negra y letras doradas">
+                        <h3 class="section-cards__title">Capacitación</h3>
+                    </header>
+                    <p class="section-cards__txt">Aprende los principios biblícos para experimentar salvación y vida abundante</p>
+                    <a href="https://ministeriocristianoplenitud.blogspot.com/" target="_blank" rel="noopener noreferrer" class="link btn section-cards__btn">Quiero saber más</a>
+                </article>
+               <!-- card trhee -->
+                <article class="card">
+                    <header>
+                        <img class="section-cards__img" src="assets/consejeria.webp" alt="Un hombre y una mujer sentados sillas con cojines de frente con sus piernas cruzadas en actitud de conversación">
+                        <h3 class="section-cards__title">Consejería</h3>
+                    </header>
+                    <p class="section-cards__txt">Recibe orientacion y guía espiritual personalizada para vivir una vida victoriosa</p>
+                    <a href="/index.html#contacto" class="link btn section-cards__btn">Quiero una cita</a>
+                </article> 
+            </div>
+        </section>
+    <!-- section two banner-->
+        <!-- contenedor -->
+        <section id="podcast" class="sections">
+            <h2 class="sections__titles titles">
+                Únete a nuestro podcast
+            </h2>
+            <!-- contenedor banner -->
+            <div class="section-banner flex">                    
+                <article class="banner flex">
+                    <header >
+                        <h3 class="banner__title">                        
+                            Para vivir a plenitud                      
+                        </h3>
+                        <h4 class="banner__title--txt">
+                            Un mensaje transformador
+                        </h4>
+                    </header>  
+                    <div >
+                        <h3 class="banner__title--txt">Todos los domingos a las 9 a.m</h3>
+                    </div>                    
+                    <a href="https://www.youtube.com/channel/UC5cvkqgi1_wA0fr9Ju4E-0A" target="_blank" class="link btn banner-btn">Ir al podcast</a>                   
+                </article>
+            </div>
+        </section>
+    <!-- section three contacto y rrss -->
+        <!-- contenedor -->
+        <section id="contacto" class="sections">
+            <h2 class="sections__titles titles">Únete a nuestra comunidad</h2>
+            <div class="section-cards flex">
+                <div class="container-contc-rrss section-form">
+                    <form class="section-form" action="enviar.html" method="POST">
+                        <div class="label">
+                            <label for="names">NOMBRE Y APELLIDO:</label>
+                        </div>
+                        <input class="inputs" type="text" id="names" name="name" placeholder="Ex. Luis Tovar" required> 
+                        <div>
+                            <label class="label" for="correo">CORREO ELECTRÓNICO:</label>
+                        </div>
+                        <input class="inputs" type="email" id="correo" name="email" placeholder="Ex. usuario@email.com" required> 
+                        <div>
+                            <label class="label" for="tel">NUMERO TELEFÒNICO:</label>
+                        </div>
+                        <input class="inputs" type="email" id="tel" name="email" placeholder="Ex. +11 1111111111" required>                    
+                        <div class="label">
+                            ASUNTO:
+                        </div>
+                        <select class="inputs" name="asunto" id="">
+                            <option value="donativos">Testimonio</option>
+                            <option value="suscripción">Petición de oración</option>
+                            <option value="sugerencias">Consejería</option>
+                        </select>
+                        <div class="label">
+                            <label for="descripción">COMENTARIO:</label>     
+                        </div>
+                        <textarea class="inputs" name="comentario" id="descripción" rows="6" maxlength="250"></textarea>         
+                        <div>
+                            <input class="btn form-btn" type="submit">
+                        </div>    
+                    </form>
+                </div>
+                <div class="container-contc-rrss flex section-rrss">
+                    <div class="flex">
+                        <div class="rrss">
+                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">        
+                                <img src="/assets/instagram_3955024.svg" alt="logo de instagram">
+                            </a>
+                        </div>
+                        <div class="rrss">
+                            <a class="link" href="https://www.facebook.com/mcplenitud/" target="_blank" rel="noopener noreferrer">
+                                <img src="/assets/facebook.svg" alt="logo de facebook">
+                            </a>
+                        </div>
+                        <div class="rrss">
+                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="/assets/descarga.svg" alt="logo de threads">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="rrss">
+                            <a class="link" href="https://twitter.com/MCPLENITUD" target="_blank" rel="noopener noreferrer">
+                                <img src="/assets/twitter.svg" alt="logo de twiter">
+                            </a>
+                        </div>
+                        <div class="rrss">
+                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="/assets/tiktok-logo-icon-social-media-icon_23741129.svg" alt="logo de tiktok">
+                            </a>
+                        </div>
+                        <div class="rrss">
+                            <a class="link" href="https://t.me/+RaqoOKCtOkZ0qqSR" target="_blank" rel="noopener noreferrer">
+                                <img src="/assets/telegram.svg" alt="logo de telegram">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="rrss">
+                            <a class="link" href="https://www.youtube.com/channel/UC5cvkqgi1_wA0fr9Ju4E-0A" target="_blank" rel="noopener noreferrer">
+                                <img src="/assets/youtube.svg" alt="logo de youtube">
+                            </a>
+                        </div>
+                        <div class="rrss">
+                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="/assets/whatsapp.svg" alt="logo de whatsapp">
+                            </a>
+                        </div>
+                        <div class="rrss">
+                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="/assets/messenger.svg" alt="logo de messenger">
+                            </a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer class="flex">
+        <!-- <div class="legal flex">
+            <a class="link" href="#" target="_blank" rel="noopener noreferrer"><p>Políticas de privacidad</p></a>
+            <a class="link" href="#" target="_blank" rel="noopener noreferrer"><p>Términos y Condiciones</p></a>
+            <a class="link" href="#" target="_blank" rel="noopener noreferrer"><p>Políticas de Cookies</p></a>  
+        </div> -->
+        <div class="copy flex">
+            <p>Copyright © 2024 Ministerio Cristiano Plenitud</p> 
+            <p>Created by TECNODAGS76</p> 
+        </div>
+    </footer>
+</body>
+</html>
