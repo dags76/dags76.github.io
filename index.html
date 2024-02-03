@@ -24,13 +24,11 @@
                 <li class="topbars__items"><a class="link topbars__link" href="/index.html#podcast">Podcast</a></li>
                 <li class="topbars__items"><a class="link topbars__link" href="/index.html#contacto">Donar</a></li>
                 <li class="topbars__items"><a class="link topbars__link" href="index.html#contacto">Contactar</a></li>
-                <!-- <li class="topbars__items"><a class="link topbars__link" href="index.html#ubicacion">Contacto</a></li> -->
             </ul>
-            
         </nav>
-        <!-- <div class="topbars__toggle">
+        <div class="topbars__toggle">
             <img class="topbars__toggle--img" src="assets/bars-solid.svg" alt="toggle bars">
-        </div> -->
+        </div>
     </div>
 
     <!-- header -->
@@ -43,8 +41,7 @@
             <a href="index.html#contacto" class="link btn">Membresía</a>
         </div> -->
         
-    </header>
-    
+    </header>  
     
     <main>
     <!-- sections one cards -->
@@ -56,27 +53,31 @@
             <!--contenedor cards-->        
             <div class="section-cards flex">
                 <!-- card one -->
-                <article class="card">
+                <article class="cards card card--1">
                     <header>
-                        <img class="section-cards__img" src="assets/peticiones-de-oracion.webp" alt="Una persona dentro de un templo arrodillada con las manos juntas a la altura de su pecho en actitud de oración">
+                        <img class="section-cards__img" alt="Una persona dentro de un templo arrodillada con las manos juntas a la altura de su pecho en actitud de oración" srcset="/assets/peticiones-de-oracion.webp,
+                        /assets/peticiones-de-oracion-mobile.png 3x"
+                        src="/assets/peticiones-de-oracion.jpg">
                         <h3 class="section-cards__title">Intercesión</h3>
                     </header>                  
                     <p class="section-cards__txt">Presenta tus peticiones y recibe tu bendición con el apoyo de nuestros intercesores</p>
                     <a href="/index.html#contacto" class="link btn section-cards__btn">Necesito oración</a>
                 </article>  
                 <!-- card two -->
-                <article class="card">
+                <article class="cards card card--2">
                     <header>
-                        <img class="section-cards__img" src="assets/estudio-biblico.webp" alt="Una persona mostrando una biblia con la tapa negra y letras doradas">
+                        <img class="section-cards__img" alt="Una persona mostrando una biblia con la tapa negra y letras doradas" srcset="/assets/estudio-biblico.webp,
+                        /assets/estudio-biblico-mobile.jpg 3x" src="/assets/estudio-biblico-mobile.jpg">
                         <h3 class="section-cards__title">Capacitación</h3>
                     </header>
-                    <p class="section-cards__txt">Aprende los principios biblícos para experimentar salvación y vida abundante</p>
+                    <p class="section-cards__txt">Aprende los principios biblícos para experimentar salvación y una vida abundante</p>
                     <a href="https://ministeriocristianoplenitud.blogspot.com/" target="_blank" rel="noopener noreferrer" class="link btn section-cards__btn">Quiero saber más</a>
                 </article>
                <!-- card trhee -->
-                <article class="card">
+                <article class="cards card">
                     <header>
-                        <img class="section-cards__img" src="assets/consejeria.webp" alt="Un hombre y una mujer sentados sillas con cojines de frente con sus piernas cruzadas en actitud de conversación">
+                        <img class="section-cards__img"  alt="Un hombre y una mujer sentados sillas con cojines de frente con sus piernas cruzadas en actitud de conversación" srcset="/assets/consejeria.webp,
+                        /assets/consejeros-mobile.jpg 2x" src="/assets/consejeros-mobile.jpg">
                         <h3 class="section-cards__title">Consejería</h3>
                     </header>
                     <p class="section-cards__txt">Recibe orientacion y guía espiritual personalizada para vivir una vida victoriosa</p>
@@ -86,7 +87,7 @@
         </section>
     <!-- section two banner-->
         <!-- contenedor -->
-        <section id="podcast" class="sections">
+        <section id="podcast" class="sections section-mobile">
             <h2 class="sections__titles titles">
                 Únete a nuestro podcast
             </h2>
@@ -102,67 +103,36 @@
                         </h4>
                     </header>  
                     <div >
-                        <h3 class="banner__title--txt">Todos los domingos a las 9 a.m</h3>
+                        <h3 class="banner__title--txt">Todos los domingos <br> a las 9 a.m</h3>
                     </div>                    
-                    <a href="https://www.youtube.com/channel/UC5cvkqgi1_wA0fr9Ju4E-0A" target="_blank" class="link btn banner-btn">Ir al podcast</a>                   
+                    <a href="https://www.youtube.com/channel/UC5cvkqgi1_wA0fr9Ju4E-0A" target="_blank" class="link btn banner-btn">Ir al podcat</a>                   
                 </article>
             </div>
         </section>
     <!-- section three contacto y rrss -->
         <!-- contenedor -->
-        <section id="contacto" class="sections">
-            <h2 class="sections__titles titles">Únete a nuestra comunidad</h2>
-            <div class="section-cards flex">
-                <div class="container-contc-rrss section-form">
-                    <form class="section-form" action="enviar.html" method="POST">
-                        <div class="label">
-                            <label for="names">NOMBRE Y APELLIDO:</label>
-                        </div>
-                        <input class="inputs" type="text" id="names" name="name" placeholder="Ex. Luis Tovar" required> 
-                        <div>
-                            <label class="label" for="correo">CORREO ELECTRÓNICO:</label>
-                        </div>
-                        <input class="inputs" type="email" id="correo" name="email" placeholder="Ex. usuario@email.com" required> 
-                        <div>
-                            <label class="label" for="tel">NUMERO TELEFÒNICO:</label>
-                        </div>
-                        <input class="inputs" type="email" id="tel" name="email" placeholder="Ex. +11 1111111111" required>                    
-                        <div class="label">
-                            ASUNTO:
-                        </div>
-                        <select class="inputs" name="asunto" id="">
-                            <option value="donativos">Testimonio</option>
-                            <option value="suscripción">Petición de oración</option>
-                            <option value="sugerencias">Consejería</option>
-                        </select>
-                        <div class="label">
-                            <label for="descripción">COMENTARIO:</label>     
-                        </div>
-                        <textarea class="inputs" name="comentario" id="descripción" rows="6" maxlength="250"></textarea>         
-                        <div>
-                            <input class="btn form-btn" type="submit">
-                        </div>    
-                    </form>
-                </div>
-                <div class="container-contc-rrss flex section-rrss">
-                    <div class="flex">
+        <section id="contacto" class="sections section-mobile">
+            <h2 class="sections__titles titles titles-mobile">Únete a nuestra comunidad</h2>
+            <div class="section-cards flex cards">
+                <div class="container__rrss flex section-rrss">
+                    <div class="flex section-rrss--icon">
                         <div class="rrss">
-                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">        
+                            <a class="link rrss--link" href="#" target="_blank" rel="noopener noreferrer">        
                                 <img src="/assets/instagram_3955024.svg" alt="logo de instagram">
                             </a>
                         </div>
                         <div class="rrss">
-                            <a class="link" href="https://www.facebook.com/mcplenitud/" target="_blank" rel="noopener noreferrer">
+                            <a class="link rrss--link" href="https://www.facebook.com/mcplenitud/" target="_blank" rel="noopener noreferrer">
                                 <img src="/assets/facebook.svg" alt="logo de facebook">
                             </a>
                         </div>
                         <div class="rrss">
-                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                            <a class="link rrss--link" href="#" target="_blank" rel="noopener noreferrer">
                                 <img src="/assets/descarga.svg" alt="logo de threads">
                             </a>
                         </div>
                     </div>
-                    <div class="flex">
+                    <div class="flex section-rrss--icon">
                         <div class="rrss">
                             <a class="link" href="https://twitter.com/MCPLENITUD" target="_blank" rel="noopener noreferrer">
                                 <img src="/assets/twitter.svg" alt="logo de twiter">
@@ -179,7 +149,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="flex">
+                    <div class="flex section-rrss--icon">
                         <div class="rrss">
                             <a class="link" href="https://www.youtube.com/channel/UC5cvkqgi1_wA0fr9Ju4E-0A" target="_blank" rel="noopener noreferrer">
                                 <img src="/assets/youtube.svg" alt="logo de youtube">
@@ -197,20 +167,42 @@
                         </div>
                     </div>  
                 </div>
+                
+                <form class="container__rrss section-form" action="enviar.html" method="POST">
+                    <div class="label">
+                        <label for="names">NOMBRE Y APELLIDO:</label>
+                    </div>
+                    <input class="inputs" type="text" id="names" name="name" placeholder="Ex. Luis Tovar" required> 
+                    <div>
+                        <label class="label" for="correo">CORREO ELECTRÓNICO:</label>
+                    </div>
+                    <input class="inputs" type="email" id="correo" name="email" placeholder="Ex. usuario@email.com" required> 
+                    <div>
+                        <label class="label" for="tel">NUMERO TELEFÒNICO:</label>
+                    </div>
+                    <input class="inputs" type="email" id="tel" name="email" placeholder="Ex. +11 1111111111" required>                    
+                    <div class="label">
+                        ASUNTO:
+                    </div>
+                    <select class="inputs" name="asunto">
+                        <option value="donativos">Testimonio</option>
+                        <option value="suscripción">Petición de oración</option>
+                        <option value="sugerencias">Consejería</option>
+                    </select>
+                    <div class="label">
+                        <label for="descripción">COMENTARIO:</label>     
+                    </div>
+                    <textarea class="inputs" name="comentario" id="descripción" rows="6" maxlength="250"></textarea>         
+                    <div>
+                        <input class="btn form-btn" type="submit">
+                    </div>    
+                </form>
             </div>
-        </section>
-        
+        </section>  
     </main>
-    <footer class="flex">
-        <!-- <div class="legal flex">
-            <a class="link" href="#" target="_blank" rel="noopener noreferrer"><p>Políticas de privacidad</p></a>
-            <a class="link" href="#" target="_blank" rel="noopener noreferrer"><p>Términos y Condiciones</p></a>
-            <a class="link" href="#" target="_blank" rel="noopener noreferrer"><p>Políticas de Cookies</p></a>  
-        </div> -->
-        <div class="copy flex">
-            <p>Copyright © 2024 Ministerio Cristiano Plenitud</p> 
-            <p>Created by TECNODAGS76</p> 
-        </div>
+
+    <footer class="footer flex">
+        <p>Copyright © 2024 Ministerio Cristiano Plenitud | Created by TECNODAGS76</p> 
     </footer>
 </body>
 </html>
