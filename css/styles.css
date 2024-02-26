@@ -40,10 +40,11 @@ body{
 /* top bar menu */
 .topbar{
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 60px;
     padding: 0 2em;
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 0.73rem + 0.55vw ,1.4rem);
     font-weight: 600;
     background-color:hsl(0, 0%, 100%);
 }
@@ -52,18 +53,20 @@ body{
     height: 50px;
     max-width: 100%;
 }
-.topbars__nav{
-    margin-left: auto;
-    height: 60px;
-    
+.topbars__menu{
+    margin: 0;
+    padding: 0;
+    gap: 0 2em;
 }
 .topbars__items{
-    display: inline-block;
     list-style-type: none;
-    padding-left: 2em;
 }
 .topbars__toggle{
+    position: fixed;
+    right: 0;
+    width: 2rem;
     display: none;
+    /* transform: translateX(2.4rem); */
 }
 
 /* header */
@@ -72,7 +75,6 @@ body{
     justify-content: center;
     align-items: center;
     padding: 8rem 0rem 4rem;
-    /* margin-bottom: 20px; */
     width: 100%;
     height: calc(100vh - 60px);
     background: url(../assets/city-438393_640\ \(1\).webp) no-repeat center/cover;
@@ -81,9 +83,7 @@ body{
     color: #fff;
 }
 .header__title{
-    /* font-family: 'Roboto Slab', serif; */
     font-size: 4rem;
-    /* font-weight: 400; */
     text-align: center;
 }
 .header__subtitle{
@@ -107,15 +107,12 @@ text-align: center;
     margin: 0 auto;
     padding: 2rem 0;
 }
-
-/* INCLUIR ESTAS PROPIEDADES EN SECTION Y VERIFICAR SI DAN EL MISMO RESULTADO */
 .sections__titles{
     text-align: center;
     font-size: 2rem;
 }
 
 .section-cards__img{
-    /* width: 600px; */
     max-width: 100%;
 }
 
@@ -129,7 +126,6 @@ text-align: center;
     position: relative;
     width: 30%;
     max-width: 380px;
-    /* height: 400px; */
     overflow: hidden;
 }
 .section-cards__title,
@@ -327,10 +323,8 @@ text-align: center;
         display: none;
     }
     .topbars__toggle{
-        display:block;
-        width: 40px;
-        height: 40px;
-        margin-left: auto;
+        display:initial;
+        position: initial;
     }
      .header__title{
         font-size: 2rem;
